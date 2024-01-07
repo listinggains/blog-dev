@@ -6,12 +6,19 @@ date: '2023-11-29'
 modified: '2023-12-08'
 tags: ['nextjs','blog','webdev','opensource']
 cover_image: true
+cardImage:'https://raw.githubusercontent.com/listinggains/blog-dev/main/images/img1.jpg'
 ---
+
 # Heading H1
+
 ## Heading H2
+
 ### Heading H3
+
 #### Heading H4
+
 ##### Heading H5
+
 ###### Heading H6
 
 # Welcome
@@ -26,17 +33,17 @@ This is a **live demo** of MDXEditor with all default features on.
 
 In here, you can find the following markdown elements:
 
-* Headings
-* Lists
-  * Unordered
-  * Ordered
-  * Check lists
-  * And nested ;)
-* Links
-* Bold/Italic/Underline formatting
-* Tables
-* Code block editors
-* And much more.
+- Headings
+- Lists
+  - Unordered
+  - Ordered
+  - Check lists
+  - And nested ;)
+- Links
+- Bold/Italic/Underline formatting
+- Tables
+- Code block editors
+- And much more.
 
 The current editor content is styled using the `@tailwindcss/typography` [plugin](https://tailwindcss.com/docs/typography-plugin).
 
@@ -59,7 +66,7 @@ MDXEditor embeds CodeMirror for code editing.
 
 ```tsx
 export default function App() {
-  return (<div>Hello world</div>)
+  return <div>Hello world</div>;
 }
 ```
 
@@ -69,10 +76,15 @@ The block below is a live React component. You can configure multiple live code 
 
 ```jsx live
 export default function App() {
-  return (<div>
-  <p>This is a live React component, that's being previewed in codesandbox. </p>
-  <p>Editing it will update the fenced codeblock in the markdown.</p>
-  </div>)
+  return (
+    <div>
+      <p>
+        This is a live React component, that's being previewed in
+        codesandbox.{" "}
+      </p>
+      <p>Editing it will update the fenced codeblock in the markdown.</p>
+    </div>
+  );
 }
 ```
 
@@ -85,5 +97,5 @@ you can navigate the cells with `enter`, `shift+enter`, `tab` and `shift+tab`.
 | :---------------- | :------: | ----: |
 | Python Hat        |   True   | 23.99 |
 | SQL Hat           |   True   | 23.99 |
-| Codecademy Tee    |   False  | 19.99 |
-| Codecademy Hoodie |   False  | 42.99 |
+| Codecademy Tee    |  False   | 19.99 |
+| Codecademy Hoodie |  False   | 42.99 |
